@@ -69,7 +69,31 @@ header> section > img{
 
 
 /* Games page */
+.games {
+display: flex;
+justify-content: center; 
+gap: 20px;               
+padding: 40px;
+}
 
+.games p {
+width: 150px;            
+font-size: 14px;
+font-weight: bold;
+margin: 0;
+margin-bottom: 8px;
+text-align: center;
+color: #00ffff;
+}
+
+.games img {
+width: 150px;
+height: 200px;
+border-radius: 6px;
+box-shadow: 0 0 8px #00ffff;
+display: block;
+margin: 0 auto 20px auto;
+}
 
 /* Playstation top 10 page */
 

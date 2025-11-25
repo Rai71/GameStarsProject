@@ -54,17 +54,32 @@ header> section > img{
 
 
 /* Merch page */
-#merch-container{
+#merch-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.merch-fotos{
-    width: 150px;
+.merch-item {
+    text-align: center;
+    position: relative;
 }
 
-#merch-main{
-    height: 80vh;
+.merch-title {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Roboto, Sans-serif;
+}
+
+.merch-fotos {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Contact page */

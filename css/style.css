@@ -204,10 +204,13 @@ footer{
 }
 
 .box1Home{
+    width: 90%;
     background-color: transparent;
     backdrop-filter: blur(2px);
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin-bottom: 10vh;
+    margin-left: 5%;
 }
 
 #box1Homeinhoud{
@@ -219,7 +222,7 @@ footer{
     width: 90%;
     margin-left: 5%;
     margin-top: 3vh;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 #IMGbloodborne{
@@ -241,6 +244,39 @@ footer{
     height: 30vh;
     width: 20vw;
     object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.box2Homeinhoud{
+    padding-bottom: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+#gta5Box{
+    width: 30vw;
+}
+
+#IMGgta5{
+    width: 30vw;
+    height: 30vh;
+    object-fit: fill;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+#twoKayBox{
+    width: 30vw;
+}
+
+#IMG2k26{
+    width: 30vw;
+    height: 30vh;
+    object-fit: fill;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
 }

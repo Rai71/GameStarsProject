@@ -1,17 +1,26 @@
 /* algemeen */
-body{
-
-    background-size: cover;
-    background-repeat: 0;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: font;
 }
+
+@font-face{
+    font-family: font;
+    font-size: 10rem;
+    src: url(/lib/Storytime.ttf);
+}
+
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
     background-color: transparent;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(6px);
     padding: 1rem 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
     border-radius: 5px;
@@ -27,6 +36,19 @@ header{
     gap: 2rem;
 }
 
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #d18b00;
+}
+
+
+
 #gifImage{
     position: fixed;
     top: 0;
@@ -40,6 +62,13 @@ header> section > img{
     height: 10vh;
     width: 10vw;
 }
+
+
+footer{
+    height: 40vh;
+    background-color: #262626;
+}
+
 
 /* Home page */
 

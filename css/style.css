@@ -99,7 +99,7 @@ footer{
     padding: 2vw;
     height: 40vh;
     width: 100%;
-    background-color: #16055c;
+    background-color: #3a49d6;
     position: static;
     bottom: 0;
     border-radius: 6px 6px 0 0;
@@ -309,6 +309,32 @@ margin: 0 auto 20px auto;
 }
 
 /* Playstation top 10 page */
+.gamesPsTop10{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5vh;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.tekstBoxModulePS10 {
+    width: 80vw;
+    margin-left: 8vw;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.kopjesPs10 {
+    background-color: #fffbfc;
+    width: 30vw;
+    border-radius: 15px;
+    padding: 2vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin-bottom: 2vh;
+}
 
 
 /* Xbox top 10 page */
@@ -321,6 +347,7 @@ margin: 0 auto 20px auto;
 #xbox-container-top{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 20vh;
 }
 
 .xbox-title{
@@ -328,8 +355,14 @@ margin: 0 auto 20px auto;
     font-family: Roboto, Sans-serif;
 }
 
-#xbox-fotos{
-    width: 300px;
+#xbox-fotos-top{
+    width: 30vw;
+    height: 300px;
+    border-radius: 8px;
+}
+
+#xbox-fotos-bottom{
+    width: 20vw;
     height: 300px;
     border-radius: 8px;
 }
@@ -343,6 +376,7 @@ margin: 0 auto 20px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+    margin-bottom: 10vh;
 }
 
 .xbox-nieuws-bottom{
@@ -358,7 +392,8 @@ margin: 0 auto 20px auto;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
+    margin-top: 20vh;
 }
 
 .merch-item {

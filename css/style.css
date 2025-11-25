@@ -25,7 +25,8 @@ header{
     border-radius: 5px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 50;
+    height: 16vh;
 }
 
 .nav-links{
@@ -101,6 +102,10 @@ footer{
     bottom: 0;
 }
 
+#darkmodebutton{
+    width: 20px;
+}
+
 /* Home page */
 
 
@@ -129,6 +134,8 @@ footer{
 
 #xbox-fotos{
     width: 300px;
+    height: 300px;
+    border-radius: 8px;
 }
 
 .xbox-nieuws-top{
@@ -151,27 +158,38 @@ footer{
 #merch-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 100px;
+    gap: 150px;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+    margin-bottom: 20vh;
 }
 
 .merch-item {
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .merch-title {
-    color: white;
+    color: black;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
     font-family: Roboto, Sans-serif;
+    background-color: transparent;
+    font-size: 1.4rem;
+    width: 5vw;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(6px);
 }
 
 .merch-fotos {
-    width: 100%;
+    width: 200%;
     height: auto;
     border-radius: 10px;
 }

@@ -6,13 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Lucas Zonneveld">
     <title>GameStars</title>
     <link rel="icon" href="-" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="lib/index.js" defer></script>
 <body>
+    <img src="images/lightModeBackground.gif" id="gifImage" alt="achtergrond">
     <header>
-
+        <section>
+            <img style="height: 16vh;" id="logoHeader" src="images/Game_Stars_logo_2.png" alt="logo GameStars">
+        </section>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <section class="subnav">
+                <button class="subnavBTN">Top 10</button>
+                <section class="subnavContent">
+                    <a href="PS10.html">Playstation</a>
+                    <a href="xbox10.html">Xbox</a>
+                </section>
+            </section>
+            <a href="merch.html">Merchandise</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button onclick="changeGIF()">
+            <img id="darkmodebutton" src="images/darkmode.jpg" alt="darkmodeknop">
+        </button>
     </header>
     <main>
 <section class="games">

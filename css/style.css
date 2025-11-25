@@ -29,3 +29,18 @@ header> section > img{
     height: 10vh;
     width: 10vw;
 }
+
+/* merch */
+
+#merch-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.merch-fotos{
+    width: 150px;
+}
+
+#merch-main{
+    height: 80vh;
+}

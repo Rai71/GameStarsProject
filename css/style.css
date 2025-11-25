@@ -111,10 +111,15 @@ footer{
 
 
 /* Xbox top 10 page */
+#title-xbox{
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+
 #xbox-container-top{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
 }
 
 .xbox-title{

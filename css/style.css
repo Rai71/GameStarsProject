@@ -1,5 +1,31 @@
-*{
-    background-image: url(/images/face3749040cf5adabb1eb4b09717c6f.gif);
+/* algemeen */
+body{
+    background-image: url(/images/lightModeBackground.gif);
     background-size: cover;
-    filter: blur(2px);
+    background-repeat: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+#dark-mode{
+    background-image: url(/images/face3749040cf5adabb1eb4b09717c6f.gif);
+}
+
+header> section > img{
+    height: 10vh;
+    width: 10vw;
 }

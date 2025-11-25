@@ -101,7 +101,6 @@ footer{
     bottom: 0;
 }
 
-
 /* Home page */
 
 
@@ -112,13 +111,42 @@ footer{
 
 
 /* Xbox top 10 page */
+#xbox-container-top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
 
+.xbox-title{
+    color: white;
+    font-family: Roboto, Sans-serif;
+}
+
+#xbox-fotos{
+    width: 300px;
+}
+
+.xbox-nieuws-top{
+    text-align: center;
+
+}
+
+#xbox-container-bottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.xbox-nieuws-bottom{
+    text-align: center;
+
+}
 
 /* Merch page */
 #merch-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 100px;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -141,6 +169,10 @@ footer{
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+#titlexbox{
+    display: flex;
 }
 
 /* Contact page */

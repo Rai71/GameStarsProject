@@ -293,8 +293,14 @@ margin: 0 auto 20px auto;
     font-family: Roboto, Sans-serif;
 }
 
-#xbox-fotos{
-    width: 300px;
+#xbox-fotos-top{
+    width: 30vw;
+    height: 300px;
+    border-radius: 8px;
+}
+
+#xbox-fotos-bottom{
+    width: 20vw;
     height: 300px;
     border-radius: 8px;
 }

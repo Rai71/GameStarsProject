@@ -2,12 +2,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: font;
+    font-family: Storytime;
     box-sizing: border-box;
 }
 
 @font-face{
-    font-family: font;
+    font-family: Storytime;
     src: url(/lib/Storytime.ttf);
 }
 
@@ -46,7 +46,7 @@ header{
 }
 
 .nav-links a:hover{
-    color: #d18b00;
+    color: #16055c;
 }
 
 .subnav .subnavBTN{
@@ -479,6 +479,7 @@ margin: 0;
 margin-bottom: 8px;
 text-align: center;
 color: #000000;
+font-family: Storytime, sans-serif;
 }
 
 .games img {
@@ -514,9 +515,10 @@ flex-wrap: wrap;
 }
 
 .kopjesPs10 {
-    display: flex;
-    flex-direction: column;
-background-color: #fffbfc;
+display: flex;
+flex-direction: column;
+background-color:transparent;
+backdrop-filter: blur(2px);
 width: 30vw;
 border-radius: 15px;
 padding: 2vw;
@@ -534,6 +536,13 @@ justify-content: space-around;
 align-items: center;
 }
 
+.inhoudTekstPs10 > p {
+    font-family: Roboto, sans-serif;
+}
+
+.modulesPsTop10{
+margin-top: 10vh;
+}
 
 /* Xbox top 10 page */
 #title-xbox{

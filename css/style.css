@@ -434,6 +434,11 @@ flex-direction: column;
 justify-content: space-around;
 align-items: center;
 }
+
+.inhoudTekstPs10 > p {
+    font-family: Roboto, sans-serif;
+}
+
 .modulesPsTop10{
 margin-top: 10vh;
 }

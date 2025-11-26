@@ -165,21 +165,22 @@ header> section > img{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-height: 100vh;
+    min-height: 0vh;
     background: #242424;
 }
 
 
 footer{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-background: #3a49d6;
-height: 190px;
-padding: 20px 50px;
-flex-direction: column;
+    margin-top: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #3a49d6;
+    height: 190px;
+    padding: 20px 50px;
+    flex-direction: column;
 }
 
 footer .socialIcons, footer .footerMenu{
@@ -238,15 +239,53 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(/images/abstract-purple-wavy-modern-light-background.png);
-    background-size: 1500px 100px;
+    background: url(/images/Voorgayrai.png);
+    background-size: 1000px 100px;
 }
 
 footer .wave#wave1{
     z-index: 1000;
     opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
 }
 
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 0;
+    animation: animateWave-02 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave-02 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave-02 3s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave-02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
 
 .kopFooter{
     position: absolute;
@@ -742,3 +781,106 @@ margin-top: 10vh;
 }
 
  
+
+
+
+
+
+
+/* Login page */
+.loginForm{
+    margin-top: 30vh;
+    margin-left: 25%;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 50%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.loginForm h1{
+    font-size: 36px;
+    text-align: center;   
+}
+
+.loginForm .inputBox{
+    width: 100%;
+    height: 50px;
+    margin:  30px 0;
+}
+
+.inputBox input{
+    width: 40vw;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border:  2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputBox input::placeholder{
+    color: #fff;
+}
+
+.loginForm .rememberForget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.rememberForget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.rememberForget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rememberForget  a:hover{
+    text-decoration: underline;
+}
+
+.loginForm .loginBTN{
+    width:  100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.loginForm .registerLink{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registerLink p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registerLink p a:hover{
+    text-decoration: underline;
+}
+

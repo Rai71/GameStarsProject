@@ -324,31 +324,46 @@ object-fit: cover;
 }
 
 /* Playstation top 10 page */
-.gamesPsTop10{
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 5vh;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+
+.imgFotosGames{ 
+width: 20vw;
+height: 50vh;
+border-radius: 6px;
+display: block;
+margin: 0 auto 20px auto;
+object-fit: cover;
+padding: 10px;
 }
 
 .tekstBoxModulePS10 {
-    width: 80vw;
-    margin-left: 8vw;
-    margin-bottom: 3vh;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+width: 80vw;
+margin-left: 10vw;
+margin-bottom: 15vh;
+margin-top: 30vh;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .kopjesPs10 {
-    background-color: #fffbfc;
-    width: 30vw;
-    border-radius: 15px;
-    padding: 2vw;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+background-color: #fffbfc;
+width: 30vw;
+border-radius: 15px;
+padding: 2vw;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+margin-bottom: 2vh;
+}
+
+.inhoudTekstPs10{
+width: auto;
+margin-bottom: 3vh;
+margin-top: 2vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }
 
 

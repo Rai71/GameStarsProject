@@ -354,32 +354,37 @@ object-fit: cover;
 
 /* Xbox top 10 page */
 #title-xbox{
-    justify-content: center;
     display: flex;
-    margin-top: 100px;
+    margin-top: 30vh;
+    margin-left: 5vw;
 }
 
 #xbox-container-top{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
-.xbox-title{
-    color: white;
-    font-family: Roboto, Sans-serif;
+.xbox-nummer{
+    color: black;
+    font-family: Storytime, Sans-serif;
 }
 
 #xbox-fotos-top{
     width: 30vw;
     height: 300px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px #000000;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    
 }
 
 #xbox-fotos-bottom{
     width: 20vw;
     height: 300px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px #000000;
 }
 
 .xbox-nieuws-top{
@@ -396,7 +401,6 @@ object-fit: cover;
 
 .xbox-nieuws-bottom{
     text-align: center;
-
 }
 
 /* Merch page */

@@ -512,3 +512,104 @@ object-fit: cover;
 }
 
 /* Contact page */
+.contactForm{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.contactForm form{
+    width: 670px;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.contactForm form h1{
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contactForm form input{
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #3a49d6;
+}
+
+.contactForm form input::placeholder{
+    color: #fff;
+}
+
+.contactForm form #achterNaamFORM,
+.contactForm form #mobielFORM{
+    margin-left: 20px;
+}
+
+.contactForm form h1{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.contactForm form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #3a49d6;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+}
+
+.contactForm form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contactForm form #verstuurBTN{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.contactForm form #verstuurBTN:hover{
+    background-color: #3a49d6;
+    color: #000000;
+    transition: .5s ease-in-out;
+}
+
+ 

@@ -169,6 +169,10 @@ header> section > img{
     background: #242424;
 }
 
+body.darkmode footer .wave {
+    background-image: url(/images/Voorgayrai2\ \(1\).png);
+}
+
 
 footer{
     margin-top: 30vh;

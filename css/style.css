@@ -888,3 +888,47 @@ margin-top: 10vh;
     text-decoration: underline;
 }
 
+/* raiReview page */
+.raiGameLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    border-radius: 15px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 3vw;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.raiGameImage{
+    height: 10vw;
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+
+.raiGame1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.raiGame2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.raiGameStory{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -7,16 +7,16 @@
         "genre" => "MOBA",
         "rating" => 9.0,
         "description" => "League of Legends is een competitieve online MOBA waarin twee teams van vijf spelers strijden om de basis van de tegenstander te vernietigen. Met een enorme hoeveelheid kampioenen, strategische gameplay en eSports-competities is het een van de populairste games ter wereld.",
-        "image" => "images/lol.jpg"
+        "image" => "images/leagueoflegends.jpg"
     );
 
     $gta6 = array(
         "title" => "Grand theft auto",
         "pegi" => 18,
         "developer" => "Rockstar Games",
-        "release" => "19 noxember 2026",
+        "release" => "19 november 2026",
         "genre" => "Openwereldspel, Schietspel, Action-adventure, Nonlinear gameplay",
-        "rating" => 10,
+        "rating" => "X",
         "description" => "Grand Theft Auto VI is een actie-avonturenspel...",
         "image" => "images/gta6.jpg"
     );

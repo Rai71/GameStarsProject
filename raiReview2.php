@@ -1,3 +1,34 @@
+<?php 
+    $leagueOfLegends = array(
+        "title" => "League of Legends",
+        "pegi" => 12,
+        "developer" => "Riot Games",
+        "release" => "2009",
+        "genre" => "MOBA",
+        "rating" => 9.0,
+        "description" => "League of Legends is een competitieve online MOBA waarin twee teams van vijf spelers strijden om de basis van de tegenstander te vernietigen. Met een enorme hoeveelheid kampioenen, strategische gameplay en eSports-competities is het een van de populairste games ter wereld.",
+        "image" => "images/lol.jpg"
+    );
+
+    $gta6 = array(
+        "title" => "Grand theft auto",
+        "pegi" => 18,
+        "developer" => "Rockstar Games",
+        "release" => "19 noxember 2026",
+        "genre" => "Openwereldspel, Schietspel, Action-adventure, Nonlinear gameplay",
+        "rating" => 10,
+        "description" => "Grand Theft Auto VI is een actie-avonturenspel...",
+        "image" => "images/gta6.jpg"
+    );
+
+    $selectedGame = 1;
+
+    if ($selectedGame === 1){
+        $game = $leagueOfLegends;
+    } else {
+        $game = $gta6;
+    }
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -7,11 +38,12 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Rainier Gondres">
-    <title>GameStars</title>
-    <link rel="icon" href="-" type="image/x-icon">
+    <title>Rai review 2</title>
+    <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
+</head>
 <body class="darkmode">
     <img src="images/lightModeBackground.gif" id="gifImage" alt="achtergrond">
     <header>
@@ -34,10 +66,23 @@
         <button id="darkModeBTN" onclick="changeGIF()">🌖</button>
     </header>
     <main>
-        <?php 
-        
-        
-        ?>
+        <section class="raiGameLayout">
+            <section class="raiGame1">
+                <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
+                <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
+            </section>
+            <section class="raiGame2">
+                <h1><?php echo $game['title']; ?></h1>
+                <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
+                <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
+                <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
+                <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
+                <article class="raiGameStory">
+                    <h2>Beschrijving</h2>
+                    <p><?php echo $game['description']; ?></p>
+                </article>
+            </section>
+        </section>
     </main>
     <footer>
         <section class="waves">

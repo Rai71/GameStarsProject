@@ -62,7 +62,7 @@ header{
 .subnavContent{
     padding: 1vw;
     position: absolute;
-    right: 44.3vw;
+    right: 43.3vw;
     display: none;
     background-color: transparent;
     backdrop-filter: blur(2px);
@@ -167,6 +167,10 @@ header> section > img{
     align-items: flex-end;
     min-height: 0vh;
     background: #242424;
+}
+
+body.darkmode footer .wave {
+    background-image: url(/images/Voorgayrai2\ \(1\).png);
 }
 
 

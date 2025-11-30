@@ -5,7 +5,7 @@
         "developer" => "Team Cherry",
         "release" => "4 Sep, 2025",
         "genre" => "Metroidvania",
-        "rating" => "9/10",
+        "rating" => "9",
         "description" => "As the lethal hunter Hornet, adventure through a kingdom ruled by silk and song! Captured and taken to this unfamiliar world, prepare to battle mighty foes and solve ancient mysteries as you ascend on a deadly pilgrimage to the kingdom’s peak. Hollow Knight: Silksong is the epic sequel to Hollow Knight, the award winning action-adventure. Journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover secrets tied to your nature and your past.",
         "image" => "images/hollowknight.jpg"
     );
@@ -16,7 +16,7 @@
         "developer" => "CD Projekt RED",
         "release" => "10 Dec, 2020",
         "genre" => "Cyberpunk, Open world, RPG",
-        "rating" => "18",
+        "rating" => "8",
         "description" => "Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?",
         "image" => "images/Cyberpunk_2077_box_art.jpg"
     );
@@ -37,8 +37,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Rainier Gondres">
-    <title>Rai review 2</title>
+    <meta name="author" content="Lucas Zonneveld">
+    <title>Lucas review 2</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

@@ -9,7 +9,7 @@
             "rating" => "9",
             "description" => "As the lethal hunter Hornet, adventure through a kingdom ruled by silk and song! Captured and taken to this unfamiliar world, prepare to battle mighty foes and solve ancient mysteries as you ascend on a deadly pilgrimage to the kingdom’s peak. Hollow Knight: Silksong is the epic sequel to Hollow Knight, the award winning action-adventure. Journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover secrets tied to your nature and your past.",
             "image" => "images/fortnite.jpg",
-            "image2" => "images/fortnite.jpg"
+            "image2" => "images/fortnite2.jpg"
         ),
         "marvel rivals" => array(
             "title" => "Marvel Rivals",

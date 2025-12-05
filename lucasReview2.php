@@ -20,7 +20,7 @@
             "rating" => "6",
             "description" => "Marvel Rivals is a Super Hero Team-Based PVP Shooter! Assemble an all-star Marvel squad, devise countless strategies by combining powers to form unique Team-Up skills and fight in destructible, ever-changing battlefields across the continually evolving Marvel universe!",
             "image" => "images/marvelrivals.png",
-            "image2" => "images/marvelrivals2.jpg"
+            "image2" => "images/marvelrivals2.png"
         )
     );
     $selectedGame = 1;
@@ -77,8 +77,8 @@
             <section class="lucasGame1">
                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="lucasGameImage">
                 <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="lucasGameImage">
-                <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             </section>
+            <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             <section class="lucasGame2">
                 <h1><?php echo $game['title']; ?></h1>
                 <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>

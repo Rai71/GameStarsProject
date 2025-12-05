@@ -1,46 +1,33 @@
 <?php 
-    $gameRaiReview2 = array(
-
-        "sekiro" => array(
-            "title" => "Sekiro: Shadows Die Twice",
-            "pegi" => 18,
-            "developer" => "FromSoftware",
-            "release" => "22 maart 2019",
-            "genre" => "Action-adventure, Actierollenspel, souls-like",
-            "rating" => 9.3,
-            "description" => "Sekiro: Shadows Die Twice is een uitdagende third-person action-adventuregame van FromSoftware, gesitueerd in een fantasierijk Japan uit de jaren 1500. Je speelt als de “One-Armed Wolf”, een shinobi die op zoek is naar zijn jonge heer (Kuro), die door de Ashina-clan wordt bedreigd. Het spel bevat intense zwaardgevechten die draaien om houding (posture), stealth, beweging met een grijphaak en een uniek wederopstandingsmechanisme waarmee je de dood kunt tarten. Het combineert de esthetiek van samoeraifilms met bovennatuurlijke lore.",
-            "image" => "images/Sekiro_art.jpg",
-            "image2" => "images/sekiro2.jpeg",
-        ),
-
-        "bloodborne" => array(
-            "title" => "Bloodborne",
-            "pegi" => 16,
-            "developer" => "FromSoftware",
-            "release" => "24 maart 2015",
-            "genre" => "Actierollenspel, Vechtspel, Action-adventure, Survival horror, souls-like",
-            "rating" => 9.4,
-            "description" => "Bloodborne is een duistere, gotische third-person action-RPG van FromSoftware, waarin spelers “Hunters” worden in de door een plaag geteisterde stad Yharnam om beesten te bestrijden en kosmische verschrikkingen te onthullen. Het spel legt de nadruk op agressieve, snelle gevechten met trick weapons en vuurwapens in plaats van schilden, en speelt zich af in een onderling verbonden wereld vol cryptische lore en een adembenemende, krankzinnige sfeer.",
-            "image" => "images/Bloodborne.webp",
-            "image2" => "images/bloodborne2.jpg",
-        ),
+    $EaSportsFC26 = array(
+       "title" => "EA Sports FC 26",
+        "pegi" => 3,
+        "developer" => "EA Sports",
+        "release" => "26 Sep, 2025",
+        "genre" => "Sports, Football",
+        "rating" => "7,7/10",
+        "description" => "EA Sports FC 26 is de nieuwste voetbalgame van EA met realistische gameplay, officiële teams en competities, verbeterde Ultimate Team, vernieuwde carrièremodus en uitgebreide online opties. Bouw je droomteam en speel lokaal of online tegen spelers van over de hele wereld.",
+        "image" => "images/fc26.png"
     );
 
+    $MineCraft = array(
+        "title" => "MineCraft",
+        "pegi" => 7,
+        "developer" => "Mojang Studios",
+        "release" => "18 Nov, 2011",
+        "genre" => "Sandbox, Survival, Adventure",
+        "rating" => "10/10",
+        "description" => "Minecraft is een sandbox-game waarin spelers oneindige werelden kunnen bouwen, verkennen en overleven. Verzamel grondstoffen, bouw prachtige constructies, versla vijanden en speel alleen of samen met vrienden in multiplayer.",
+        "image" => "images/minecraft.png"
+    );
 
+    $selectedGame = 1;
 
-    $selectedGame = 2;
-
-    switch($selectedGame){
-        case 1:
-            $game = $gameRaiReview2["sekiro"];
-            break;
-        case 2:
-            $game = $gameRaiReview2["bloodborne"];
-            break;
-        default:
-            $game = $gameRaiReview2["sekiro"];
+    if ($selectedGame === 1){
+        $game = $EaSportsFC26;
+    } else {
+        $game =  $MineCraft;
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -50,7 +37,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Rainier Gondres">
+    <meta name="author" content="Eren">
     <title>Rai review 2</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -82,7 +69,6 @@
         <section class="raiGameLayout">
             <section class="raiGame1">
                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
-                <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
                 <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             </section>
             <section class="raiGame2">

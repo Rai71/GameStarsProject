@@ -1,33 +1,44 @@
 <?php 
-    $EaSportsFC26 = array(
-       "title" => "EA Sports FC 26",
-        "pegi" => 3,
-        "developer" => "EA Sports",
-        "release" => "26 Sep, 2025",
-        "genre" => "Sports, Football",
-        "rating" => "7,7",
-        "description" => "EA Sports FC 26 is de nieuwste voetbalgame van EA met realistische gameplay, officiële teams en competities, verbeterde Ultimate Team, vernieuwde carrièremodus en uitgebreide online opties. Bouw je droomteam en speel lokaal of online tegen spelers van over de hele wereld.",
-        "image" => "images/fc26.png"
-    );
+    $reviewGames => array(
+        "EaSportsFC26" => array(
+            "title" => "EA Sports FC 26",
+            "pegi" => 3,
+            "developer" => "EA Sports",
+            "release" => "26 Sep, 2025",
+            "genre" => "Sports, Football",
+            "rating" => "7,7",
+            "description" => "EA Sports FC 26 is de nieuwste voetbalgame van EA met realistische gameplay, officiële teams en competities, verbeterde Ultimate Team, vernieuwde carrièremodus en uitgebreide online opties. Bouw je droomteam en speel lokaal of online tegen spelers van over de hele wereld.",
+            "image" => "images/fc26.png"
+            "image" => "images/fifa266.png"
+        );
 
-    $MineCraft = array(
-        "title" => "MineCraft",
-        "pegi" => 7,
-        "developer" => "Mojang Studios",
-        "release" => "18 Nov, 2011",
-        "genre" => "Sandbox, Survival, Adventure",
-        "rating" => "10",
-        "description" => "Minecraft is een sandbox-game waarin spelers oneindige werelden kunnen bouwen, verkennen en overleven. Verzamel grondstoffen, bouw prachtige constructies, versla vijanden en speel alleen of samen met vrienden in multiplayer.",
-        "image" => "images/minecraft.png"
-    );
+        "MineCraft" => array(
+            "title" => "MineCraft",
+            "pegi" => 7,
+            "developer" => "Mojang Studios",
+            "release" => "18 Nov, 2011",
+            "genre" => "Sandbox, Survival, Adventure",
+            "rating" => "10",
+            "description" => "Minecraft is een sandbox-game waarin spelers oneindige werelden kunnen bouwen, verkennen en overleven. Verzamel grondstoffen, bouw prachtige constructies, versla vijanden en speel alleen of samen met vrienden in multiplayer.",
+            "image" => "images/minecraft.png"
+            "image" => "images/minecraft2.png"
+        );
+    )
 
-    $selectedGame = 2;
+$selectedGame = 2
 
-    if ($selectedGame === 1){
-        $game = $EaSportsFC26;
-    } else {
-        $game =  $MineCraft;
-    }
+switch ($selectedGame){
+    case 1:
+        $game = $reviewGames["EaSportsFC26"];
+        console.log("EaSportsFC26 wordt getoond.");
+        break;
+    case 2:
+        $game = $reviewGames["MineCraft"]; 
+        console.log("MineCraft wordt getoond.");
+        break;
+    default:
+        console.log("Ongeldige game-keuze.");
+}
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -69,6 +80,7 @@
         <section class="raiGameLayout">
             <section class="raiGame1">
                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
+                
             </section>
             <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             <section class="raiGame2">

@@ -1,44 +1,33 @@
 <?php 
-    $gameRaiReview2 = array(
-
-             "sekiro" => array(
-            "title" => "Sekiro: Shadows Die Twice",
-            "pegi" => 18,
-            "developer" => "FromSoftware",
-            "release" => "22 maart 2019",
-            "genre" => "Action-adventure, Actierollenspel, souls-like",
-            "rating" => 9.3,
-            "description" => "Sekiro: Shadows Die Twice is een uitdagende third-person action-adventuregame van FromSoftware, gesitueerd in een fantasierijk Japan uit de jaren 1500. Je speelt als de “One-Armed Wolf”, een shinobi die op zoek is naar zijn jonge heer (Kuro), die door de Ashina-clan wordt bedreigd. Het spel bevat intense zwaardgevechten die draaien om houding (posture), stealth, beweging met een grijphaak en een uniek wederopstandingsmechanisme waarmee je de dood kunt tarten. Het combineert de esthetiek van samoeraifilms met bovennatuurlijke lore.",
-            "image" => "images/Sekiro_art.jpg"
-        );
-
-        "bloodborne" => array(
-            "title" => "Bloodborne",
-            "pegi" => 16,
-            "developer" => "FromSoftware",
-            "release" => "24 maart 2015",
-            "genre" => "Actierollenspel, Vechtspel, Action-adventure, Survival horror, souls-like",
-            "rating" => 9.4,
-            "description" => "Bloodborne is een duistere, gotische third-person action-RPG van FromSoftware, waarin spelers “Hunters” worden in de door een plaag geteisterde stad Yharnam om beesten te bestrijden en kosmische verschrikkingen te onthullen. Het spel legt de nadruk op agressieve, snelle gevechten met trick weapons en vuurwapens in plaats van schilden, en speelt zich af in een onderling verbonden wereld vol cryptische lore en een adembenemende, krankzinnige sfeer.",
-            "image" => "images/Bloodborne.webp"
-        );
+    $leagueOfLegends = array(
+        "title" => "League of Legends",
+        "pegi" => 12,
+        "developer" => "Riot Games",
+        "release" => "2009",
+        "genre" => "MOBA",
+        "rating" => 9.0,
+        "description" => "League of Legends is een competitieve online MOBA waarin twee teams van vijf spelers strijden om de basis van de tegenstander te vernietigen. Met een enorme hoeveelheid kampioenen, strategische gameplay en eSports-competities is het een van de populairste games ter wereld.",
+        "image" => "images/leagueoflegends.jpg"
     );
 
-
+    $gta6 = array(
+        "title" => "Grand theft auto",
+        "pegi" => 18,
+        "developer" => "Rockstar Games",
+        "release" => "19 november 2026",
+        "genre" => "Openwereldspel, Schietspel, Action-adventure, Nonlinear gameplay",
+        "rating" => "X",
+        "description" => "Grand Theft Auto VI is een actie-avonturenspel...",
+        "image" => "images/gta6.jpg"
+    );
 
     $selectedGame = 1;
 
-    switch($selectedGame){
-        case 1:
-            $game = $gameRaiReview2["sekiro"];
-            break;
-        case 2:
-            $game = $gameRaiReview2["bloodborne"];
-            break;
-        default:
-            $game = $gameRaiReview2["sekiro"];
+    if ($selectedGame === 1){
+        $game = $leagueOfLegends;
+    } else {
+        $game = $gta6;
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="nl">

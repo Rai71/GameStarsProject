@@ -19,3 +19,40 @@ const MineCraft = {
     description: "Minecraft is een sandbox-game waarin spelers oneindige werelden kunnen bouwen, verkennen en overleven. Verzamel grondstoffen, bouw prachtige constructies, versla vijanden en speel alleen of samen met vrienden in multiplayer.",
     image: "images/minecraft.png"
 };
+
+let selectedGame = 2;
+
+switch (selectedGame){
+    case 1:
+        game = EaSportsFC26Review;
+        console.log("EaSportsFC26 wordt getoond.");
+        break;
+    case 2:
+        game = MineCraftReview;
+        console.log("MineCraft wordt getoond.");
+        break;
+    default:
+        console.log("Ongeldige game-keuze.");
+}
+
+const container = document.querySelector("#gameContainer");
+
+container.innerHTML = `    
+    <section class="raiGameLayout">
+        <section class="raiGame1">
+            <h1>${game.title}</h1>
+            <img src="${game.image}" alt="${game.title}" class="raiGameImage">
+            <p class="game-rating"><strong>Rating:</strong>⭐ ${game.rating}</p>
+        </section>
+        <section class="raiGame2">
+            <p><strong>PEGI:</strong> ${game.pegi}</p>
+            <p><strong>Ontwikkelaar:</strong> ${game.developer}</p>
+            <p><strong>Releasejaar:</strong> ${game.releasedate}</p>
+            <p><strong>Genre:</strong> ${game.genre}</p>
+            <article class="raiGameStory">
+                <h2>Beschrijving</h2>
+                <p>${game.description}</p>
+            </article>
+        </section>
+    </section>
+`;

@@ -35,28 +35,31 @@
         <button id="darkModeBTN" onclick="changeGIF()">🌖</button>
     </header>
     <main>
-        <section class="containerSlideShow">
-            <section>
-                <h1 id="tekst-2Main">Hottest games this week!</h1>
+        <section class="slideshow-container">
+            <section class="homeslide Fade">
+                <article class="nummerText">1 / 4</article>
+                <img src="images/arcraiders.jpg" alt="Arc raiders">
             </section>
-            <section class="slider-wrapper">
-                <section class="slider">
-                    <img class="slide-1" src="images/arcraiders.jpg" alt="Arc Raiders">
-                    <img class="slide-2" src="images/Red Dead Redemption 2.jpg" alt="Red Dead Redemption">
-                    <img class="slide-3" src="images/Marvel’s Spider-Man.webp" alt="Marvel’s Spider-Man">
-                    <img class="slide-4" src="images/hollowknight.jpg" alt="hollow knight">
-                </section>
-                <section class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="#slide-4"></a>
-                </section>
-                <section>
-                    <a class="prev" onclick="minusSlides()">&#10094;</a>
-                    <a class="next" onclick="plusSlides()">&#10095;</a>
-                </section>
+            <section class="homeslide Fade">
+                <article class="nummerText">2 / 4</article>
+                <img src="images/Red Dead Redemption 2.jpg" alt="Red Dead Redemption 2">
             </section>
+            <section class="homeslide Fade">
+                <article class="nummerText">3 / 4</article>
+                <img src="images/spooderman.webp" alt="Marvel's Spiderman 2">
+            </section>
+            <section class="homeslide Fade">
+                <article class="nummerText">4 / 4</article>
+                <img src="images/hollowknight.jpg" alt="Hollow knight">
+            </section>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+        <section>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </section>
         <section class="box1Home">
             <section id="box1Homeinhoud">

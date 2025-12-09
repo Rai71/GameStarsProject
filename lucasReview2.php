@@ -1,46 +1,40 @@
-<?php 
-    $gameRaiReview2 = array(
-
-        "sekiro" => array(
-            "title" => "Sekiro: Shadows Die Twice",
+<?php
+    $reviewGames = array(
+        "fortnite"  => array(
+            "title" => "Fortnite",
             "pegi" => 18,
-            "developer" => "FromSoftware",
-            "release" => "22 maart 2019",
-            "genre" => "Action-adventure, Actierollenspel, souls-like",
-            "rating" => 9.3,
-            "description" => "Sekiro: Shadows Die Twice is een uitdagende third-person action-adventuregame van FromSoftware, gesitueerd in een fantasierijk Japan uit de jaren 1500. Je speelt als de “One-Armed Wolf”, een shinobi die op zoek is naar zijn jonge heer (Kuro), die door de Ashina-clan wordt bedreigd. Het spel bevat intense zwaardgevechten die draaien om houding (posture), stealth, beweging met een grijphaak en een uniek wederopstandingsmechanisme waarmee je de dood kunt tarten. Het combineert de esthetiek van samoeraifilms met bovennatuurlijke lore.",
-            "image" => "images/Sekiro_art.jpg",
-            "image2" => "images/sekiro2.jpeg",
+            "developer" => "Epic Games",
+            "release" => "4 Sep, 2025",
+            "genre" => "Metroidvania",
+            "rating" => "9",
+            "description" => "As the lethal hunter Hornet, adventure through a kingdom ruled by silk and song! Captured and taken to this unfamiliar world, prepare to battle mighty foes and solve ancient mysteries as you ascend on a deadly pilgrimage to the kingdom’s peak. Hollow Knight: Silksong is the epic sequel to Hollow Knight, the award winning action-adventure. Journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover secrets tied to your nature and your past.",
+            "image" => "images/fortnite.jpg",
+            "image2" => "images/fortnite.jpg"
         ),
-
-        "bloodborne" => array(
-            "title" => "Bloodborne",
-            "pegi" => 16,
-            "developer" => "FromSoftware",
-            "release" => "24 maart 2015",
-            "genre" => "Actierollenspel, Vechtspel, Action-adventure, Survival horror, souls-like",
-            "rating" => 9.4,
-            "description" => "Bloodborne is een duistere, gotische third-person action-RPG van FromSoftware, waarin spelers “Hunters” worden in de door een plaag geteisterde stad Yharnam om beesten te bestrijden en kosmische verschrikkingen te onthullen. Het spel legt de nadruk op agressieve, snelle gevechten met trick weapons en vuurwapens in plaats van schilden, en speelt zich af in een onderling verbonden wereld vol cryptische lore en een adembenemende, krankzinnige sfeer.",
-            "image" => "images/Bloodborne.webp",
-            "image2" => "images/bloodborne2.jpg",
-        ),
+        "marvel rivals" => array(
+            "title" => "Marvel Rivals",
+            "pegi" => 18,
+            "developer" => "NetEase Games",
+            "release" => "6 Dec, 2024",
+            "genre" => "Multiplayer, Hero Shooter, PVP",
+            "rating" => "6",
+            "description" => "Marvel Rivals is a Super Hero Team-Based PVP Shooter! Assemble an all-star Marvel squad, devise countless strategies by combining powers to form unique Team-Up skills and fight in destructible, ever-changing battlefields across the continually evolving Marvel universe!",
+            "image" => "images/marvelrivals.png",
+            "image2" => "images/marvelrivals2.jpg"
+        )
     );
-
-
-
-    $selectedGame = 2;
-
-    switch($selectedGame){
-        case 1:
-            $game = $gameRaiReview2["sekiro"];
+    $selectedGame = 1;
+    switch ($selectedGame){
+        case 1:  
+            $game = $reviewGames["fortnite"];
             break;
         case 2:
-            $game = $gameRaiReview2["bloodborne"];
+            $game = $reviewGames["marvel rivals"];
             break;
         default:
-            $game = $gameRaiReview2["sekiro"];
+            $game = $reviewGames["fortnite"];
+            break;
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -50,8 +44,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Rainier Gondres">
-    <title>Rai review 2</title>
+    <meta name="author" content="Lucas Zonneveld">
+    <title>Lucas review 2</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>
@@ -79,19 +73,19 @@
         <button id="darkModeBTN" onclick="changeGIF()">🌖</button>
     </header>
     <main>
-        <section class="raiGameLayout">
-            <section class="raiGame1">
-                <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
-                <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
+        <section class="lucasGameLayout">
+            <section class="lucasGame1">
+                <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="lucasGameImage">
+                <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="lucasGameImage">
                 <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             </section>
-            <section class="raiGame2">
+            <section class="lucasGame2">
                 <h1><?php echo $game['title']; ?></h1>
                 <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
                 <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
                 <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
                 <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
-                <article class="raiGameStory">
+                <article class="lucasGameStory">
                     <h2>Beschrijving</h2>
                     <p><?php echo $game['description']; ?></p>
                 </article>

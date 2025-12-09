@@ -85,6 +85,7 @@
                 <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
                 <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             </section>
+            <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             <section class="raiGame2">
                 <h1><?php echo $game['title']; ?></h1>
                 <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>

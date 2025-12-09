@@ -902,12 +902,13 @@ margin-top: 10vh;
     width: 20vw;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin: 0.5vw;
 }
 
 
 .raiGame1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -926,7 +927,7 @@ margin-top: 10vh;
     align-items: center;
 }
 
-/* Lucas page */
+/* Lucas review pages */
 
 .lucasGameLayout{
     display: flex;
@@ -948,12 +949,13 @@ margin-top: 10vh;
     width: 20vw;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin: 0,5vw;
 }
 
 
 .lucasGame1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 

@@ -169,9 +169,7 @@ header> section > img{
     background: #242424;
 }
 
-body.darkmode footer .wave {
-    background-image: url(/images/Voorgayrai2\ \(1\).png);
-}
+
 
 
 footer{
@@ -243,7 +241,7 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(/images/Voorgayrai.png);
+    background: url(/images/lightModeWave.png);
     background-size: 1000px 100px;
 }
 
@@ -1070,4 +1068,51 @@ margin-top: 10vh;
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+
+/* DarkMode */
+
+.darkmode{
+    color: white;
+}
+
+.darkmode footer{
+    background-color: #16055c;
+}
+
+.darkmode .nav-links a{
+    color: #ffffff;
+}
+
+.darkmode .nav-links a:hover{
+    color: #b8a7ff;
+}
+
+.darkmode .subnav .subnavBTN{
+    color: #ffffff;
+}
+
+.darkmode .subnavContent{
+    border: 2px solid #ffffff;
+}
+
+.darkmode .dropDownStyle{
+    color: #ffffff;
+}
+
+.darkmode .pHomePage{
+    background-color: #16055c;
+}
+
+.darkmode #textGAMES p{
+    color: white;
+}
+
+.darkmode .merch-title{
+    color: white;
+}
+
+.darkmode .xbox-nummer{
+    color: white;
 }

@@ -55,7 +55,7 @@ switch ($selectedGame){
     <script src="lib/index.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
 </head>
-<body class="darkmode">
+<body>
     <img src="images/lightModeBackground.gif" id="gifImage" alt="achtergrond">
     <header>
         <section>

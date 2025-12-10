@@ -496,7 +496,8 @@ footer .wave#wave4{
     font-family: Roboto, Sans-serif;
     font-weight: bold;
     padding: 2vh;
-    height: 30vh;
+    height: 50vh;
+    margin-bottom: 5vh;
     background-color: #3a49d6;
     backdrop-filter: blur(90px);
     border-radius: 0 0 5px 5px;
@@ -970,6 +971,17 @@ margin-top: 10vh;
     align-items: center;
 }
 
+
+.raiGameReviewTrailer{
+    height:166px;
+    width: 380px;
+    object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+
 /* Lucas review pages */
 
 .lucasGameLayout{
@@ -1115,4 +1127,12 @@ margin-top: 10vh;
 
 .darkmode .xbox-nummer{
     color: white;
+}
+
+.darkmode .footerMenu a{
+    color: white;
+}
+
+.darkmode #trademark{
+    color: white;   
 }

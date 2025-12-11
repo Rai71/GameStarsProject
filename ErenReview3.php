@@ -1,25 +1,25 @@
 <?php 
     $reviewGames => array(
-        "EaSportsFC26" => array(
-            "title" => "EA Sports FC 26",
-            "pegi" => 3,
-            "developer" => "EA Sports",
-            "release" => "26 Sep, 2025",
-            "genre" => "Sports, Football",
-            "rating" => "7,7/10",
-            "description" => "EA Sports FC 26 is de nieuwste voetbalgame van EA met realistische gameplay, officiële teams en competities, verbeterde Ultimate Team, vernieuwde carrièremodus en uitgebreide online opties. Bouw je droomteam en speel lokaal of online tegen spelers van over de hele wereld.",
-            "image" => "images/fc26.png"
+        "FarCry3" => array(
+            "title" => "FarCry3",
+            "pegi" => 18,
+            "developer" => "Ubisoft Montreal",
+            "release" => "29 Nov, 2012",
+            "genre" => "Action, FPS, Open World",
+            "rating" => "9/10",
+            "description" => "Far Cry 3 speelt zich af op een tropisch eiland waar je moet ontsnappen aan piraten onder leiding van Vaas. Verken een grote open wereld, jaag dieren, craft uitrusting en ervaar een intens verhaal vol actie.",
+            "image" => "images/FarCry3"
         );
 
-        "MineCraft" => array(
-            "title" => "MineCraft",
-            "pegi" => 7,
-            "developer" => "Mojang Studios",
-            "release" => "18 Nov, 2011",
-            "genre" => "Sandbox, Survival, Adventure",
-            "rating" => "10/10",
-            "description" => "Minecraft is een sandbox-game waarin spelers oneindige werelden kunnen bouwen, verkennen en overleven. Verzamel grondstoffen, bouw prachtige constructies, versla vijanden en speel alleen of samen met vrienden in multiplayer.",
-            "image" => "images/minecraft.png"
+        "FarCry4" => array(
+            "title" => "FarCry4",
+            "pegi" => 18,
+            "developer" => "Ubisoft Montreal",
+            "release" => "18 Nov, 2014",
+            "genre" => "Action, FPS, Open World",
+            "rating" => "9/10",
+            "description" => "Far Cry 4 speelt zich af in het bergachtige Kyrat, waar je opstaat tegen de dictator Pagan Min. De game biedt een grote open wereld, dierenjacht, voertuigen en veel co-op mogelijkheden.",
+            "image" => "images/FarCry4"
         );
     )
 
@@ -27,12 +27,12 @@ $selectedGame = 2
 
 switch ($selectedGame){
     case 1:
-        $game = $reviewGames["EaSportsFC26"];
-        console.log("EaSportsFC26 wordt getoond.");
+        $game = $reviewGames["FarCry3"];
+        console.log("FarCry3 wordt getoond.");
         break;
     case 2:
-        $game = $reviewGames["MineCraft"]; 
-        console.log("MineCraft wordt getoond.");
+        $game = $reviewGames["FarCry4"]; 
+        console.log("FarCry4 wordt getoond.");
         break;
     default:
         console.log("Ongeldige game-keuze.");
@@ -46,7 +46,7 @@ switch ($selectedGame){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Eren">
+    <meta name="author" content="Eren Yilmaz">
     <title>Rai review 2</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -80,6 +80,9 @@ switch ($selectedGame){
                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
                 <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             </section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J6gnOVJsCsM?si=vUh6VQPc1n916kV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6d60v1OErEY?si=iFrEGh2ZnlA1wfxj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <section class="raiGame2">
                 <h1><?php echo $game['title']; ?></h1>
                 <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>

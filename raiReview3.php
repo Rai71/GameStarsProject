@@ -32,7 +32,7 @@
 
 
 
-    $selectedGame = 2;
+    $selectedGame = 1;
 
     switch($selectedGame){
         case 1:
@@ -58,7 +58,8 @@
     <title>Rai review 2</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="lib/raiReview3.js" defer></script>
+    <script src="lib/index.js" defer></script>
+    <script src="lib/raiReview3php.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
 </head>
 <body class="darkmode">
@@ -84,25 +85,42 @@
     </header>
     <main>
         <section class="raiGameLayout">
+            <h1><?php echo $game['title']; ?></h1>
             <section class="raiGame1">
-                <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
-                <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
-                <img src="<?php echo $game['image3']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
-                <iframe class="raiGameReviewTrailer" src="<?php echo $game['trailer']; ?>" title="<?php echo $game['title']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
-            </section>
-            <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
-            <section class="raiGame2">
-                <h1><?php echo $game['title']; ?></h1>
-                <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
-                <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
-                <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
-                <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
-                <article class="raiGameStory">
-                    <h2>Beschrijving</h2>
-                    <p><?php echo $game['description']; ?></p>
-                </article>
-            </section>
+                <section class="slideshowreview-container">
+                    <section class="homeslidesreview">
+                        <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>">
+                    </section>
+                    <section class="homeslidesreview">
+                        <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>">
+                    </section>
+                    <section class="homeslidesreview">
+                        <img src="<?php echo $game['image3']; ?>" alt="<?php echo $game['title']; ?>">
+                    </section>
+                    <section class="homeslidesreview">
+                        <iframe class="raiGameReviewTrailer" src="<?php echo $game['trailer']; ?>" title="<?php echo $game['title']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </section>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <section class="dotreview-container">
+                    <span class="dotreview" onclick="currentSlide(1)"></span>
+                    <span class="dotreview" onclick="currentSlide(2)"></span>
+                    <span class="dotreview" onclick="currentSlide(3)"></span>
+                    <span class="dotreview" onclick="currentSlide(4)"></span>
+                    </section>
+                    <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
+                    <section class="raiGame2">
+                        <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
+                        <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
+                        <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
+                        <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
+                        <article class="raiGameStory">
+                            <h2>Beschrijving</h2>
+                            <p><?php echo $game['description']; ?></p>
+                        </article>
+                    </section>
+                </section>
+            </section>  
         </section>
     </main>
     <footer>

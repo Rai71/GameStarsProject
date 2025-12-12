@@ -1,5 +1,5 @@
 <?php 
-    $gameRaiReview2 = array(
+    $gameRaiReview3 = array(
 
         "darksouls3" => array(
             "title" => "Dark Souls III",
@@ -8,11 +8,12 @@
             "release" => "24 maart 2016",
             "genre" => "Actierollenspel, Vechtspel, Action-adventure, souls-like",
             "rating" => 9.4,
-            "description" => "Dark Souls III is een meedogenloze action-RPG waarin je speelt als een ‘Onontbrande’ krijger, die uit de dood verrijst om het wegkwijnende Eerste Vuur te stoppen en het einde van de wereld te voorkomen door de Lords of Cinder terug naar hun tronen te brengen in het koninkrijk Lothric. Het biedt snelle, intense gevechten met diverse wapens, magie en aanpasbare vaardigheden (Weapon Arts). Het bouwt voort op de uitdagende moeilijkheidsgraad, diepe lore en de meeslepende, vervallen wereld van de serie, en dient als een passend, duister slotstuk van de trilogie.",
+            "description" => "Dark Souls III is een meedogenloze action-RPG waarin je speelt als een 'Onontbrande' krijger, die uit de dood verrijst om het wegkwijnende Eerste Vuur te stoppen en het einde van de wereld te voorkomen door de Lords of Cinder terug naar hun tronen te brengen in het koninkrijk Lothric. Het biedt snelle, intense gevechten met diverse wapens, magie en aanpasbare vaardigheden (Weapon Arts). Het bouwt voort op de uitdagende moeilijkheidsgraad, diepe lore en de meeslepende, vervallen wereld van de serie, en dient als een passend, duister slotstuk van de trilogie.",
             "image" => "images/darksouls3een.jpg",
             "image2" => "images/darksouls3twee.jpg",
             "image3" => "images/darksouls3drie.jpg",
             "trailer" => "https://www.youtube.com/embed/cWBwFhUv1-8?si=Hmdr1tpVan6rRFue",
+        ),
 
         "liesOfP" => array(
             "title" => "Lies of P",
@@ -21,7 +22,7 @@
             "release" => "18 september 2023",
             "genre" => "Actierollenspel, Vechtspel, Action-adventure, souls-like",
             "rating" => 9.4,
-            "description" => "Lies of P is een dark-fantasy “Soulslike” action-RPG, sterk geïnspireerd door Bloodborne, die het verhaal van Pinokkio herinterpreteert in de Belle Époque-stad Krat, die nu wordt overspoeld door opstandige marionetten. Spelers besturen Pinokkio, een marionet die op zoek is naar zijn maker, Geppetto, terwijl hij strijdt tegen angstaanjagende wezens en moet beslissen of hij de waarheid vertelt of liegt om vooruitgang te boeken en mens te worden in een wereld die is verwoest door een marionettenwaanzin en een versteeningsziekte. De game biedt diepe wapenaanpassing en uitdagende gevechten.",
+            "description" => "Lies of P is een dark-fantasy \"Soulslike\" action-RPG, sterk geïnspireerd door Bloodborne, die het verhaal van Pinokkio herinterpreteert in de Belle Époque-stad Krat, die nu wordt overspoeld door opstandige marionetten. Spelers besturen Pinokkio, een marionet die op zoek is naar zijn maker, Geppetto, terwijl hij strijdt tegen angstaanjagende wezens en moet beslissen of hij de waarheid vertelt of liegt om vooruitgang te boeken en mens te worden in een wereld die is verwoest door een marionettenwaanzin en een versteeningsziekte. De game biedt diepe wapenaanpassing en uitdagende gevechten.",
             "image" => "images/liesofp1.jpg",
             "image2" => "images/liesofp2.webp",
             "image3" => "images/liesofp3.jpg",
@@ -35,13 +36,13 @@
 
     switch($selectedGame){
         case 1:
-            $game = $gameRaiReview2["darksouls3"];
+            $game = $gameRaiReview3["darksouls3"];
             break;
         case 2:
-            $game = $gameRaiReview2["liesOfP"];
+            $game = $gameRaiReview3["liesOfP"];
             break;
         default:
-            $game = $gameRaiReview2["darksouls3"];
+            $game = $gameRaiReview3["darksouls3"];
     }
 
 ?>
@@ -57,7 +58,7 @@
     <title>Rai review 2</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="lib/raiReview3" defer></script>
+    <script src="lib/raiReview3.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
 </head>
 <body class="darkmode">

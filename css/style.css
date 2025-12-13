@@ -169,9 +169,7 @@ header> section > img{
     background: #242424;
 }
 
-body.darkmode footer .wave {
-    background-image: url(/images/Voorgayrai2\ \(1\).png);
-}
+
 
 
 footer{
@@ -243,7 +241,7 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(/images/Voorgayrai.png);
+    background: url(/images/lightModeWave.png);
     background-size: 1000px 100px;
 }
 
@@ -308,69 +306,37 @@ footer .wave#wave4{
 
 
 /* Home page */
-.containerSlideShow{
-    padding: 2rem;
-    background-color: rgba(54, 54, 54, 0.276);
-    border-radius: 36px;
-    border: 1px solid rgba(255, 255, 255, 0.244);
-    width: 60vw;
-    margin-left: 20vw;
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 30vh;
-    text-align: center;
+    padding: 2vw;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
 }
 
-.slider-wrapper{
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
-}
-
-.slider{
-    display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 24px;
-}
-.slider::-webkit-scrollbar{
-    width: 0%;
-}
-
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
-    opacity: 1;
-}
-
-#slide-2 ,#slide-4{
+.slideshow-container img {
+    height: 55vh;
+    width: 60vw;
     object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
 }
 
+/* Hide the images by default */
+.homeslides {
+  display: none;
+}
+
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -386,9 +352,10 @@ footer .wave#wave4{
   user-select: none;
 }
 
-.prev{
-    left: 0;
-    border-radius: 0 3px 3px 0;
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
 }
 
 .next {
@@ -396,9 +363,54 @@ footer .wave#wave4{
   border-radius: 3px 0 0 3px;
 }
 
-
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/4 etc) */
+.numberText {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-container{
+    background-color: #222;
+    padding: 0.3vw;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .box1Home{
@@ -475,7 +487,7 @@ footer .wave#wave4{
 #IMG2k26{
     width: 30vw;
     height: 30vh;
-    object-fit: fill;
+    object-fit: unset;
     border-radius: 15px 15px 0 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
 }
@@ -484,7 +496,8 @@ footer .wave#wave4{
     font-family: Roboto, Sans-serif;
     font-weight: bold;
     padding: 2vh;
-    height: 30vh;
+    height: 50vh;
+    margin-bottom: 5vh;
     background-color: #3a49d6;
     backdrop-filter: blur(90px);
     border-radius: 0 0 5px 5px;
@@ -909,14 +922,39 @@ margin-top: 10vh;
     width: 20vw;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin: 0.5vw;
 }
 
 
 .raiGame1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
+
+.raiSlideGame1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    padding: 2vw;
+}
+
+.raiReview3slide{
+    display: none;
+}
+
+.raiSlideGame1 img {
+    height: 10vw;
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin: 0.5vw;
+}
+
 
 
 .raiGame2{
@@ -932,6 +970,17 @@ margin-top: 10vh;
     flex-direction: column;
     align-items: center;
 }
+
+
+.raiGameReviewTrailer{
+    height:166px;
+    width: 380px;
+    object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
 
 /* Lucas review pages */
 
@@ -955,12 +1004,13 @@ margin-top: 10vh;
     width: 20vw;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    margin: 0,5vw;
 }
 
 
 .lucasGame1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -977,4 +1027,112 @@ margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.slideshowreview-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    padding: 2vw;
+}
+
+.slideshowreview-container img {
+    height: 30vh;
+    width: 30vw;
+    object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+/* Hide the images by default */
+.homeslidesreview {
+  display: none;
+}
+
+.dotreview {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotreview-container{
+    background-color: #222;
+    padding: 0.3vw;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+
+.active, .dotreview:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/* DarkMode */
+
+.darkmode{
+    color: white;
+}
+
+.darkmode footer{
+    background-color: #16055c;
+}
+
+.darkmode .nav-links a{
+    color: #ffffff;
+}
+
+.darkmode .nav-links a:hover{
+    color: #b8a7ff;
+}
+
+.darkmode .subnav .subnavBTN{
+    color: #ffffff;
+}
+
+.darkmode .subnavContent{
+    border: 2px solid #ffffff;
+}
+
+.darkmode .dropDownStyle{
+    color: #ffffff;
+}
+
+.darkmode .pHomePage{
+    background-color: #16055c;
+}
+
+.darkmode #textGAMES p{
+    color: white;
+}
+
+.darkmode .merch-title{
+    color: white;
+}
+
+.darkmode .xbox-nummer{
+    color: white;
+}
+
+.darkmode .footerMenu a{
+    color: white;
+}
+
+.darkmode #trademark{
+    color: white;   
 }

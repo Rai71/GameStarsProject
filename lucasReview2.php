@@ -9,7 +9,7 @@
             "rating" => "9",
             "description" => "As the lethal hunter Hornet, adventure through a kingdom ruled by silk and song! Captured and taken to this unfamiliar world, prepare to battle mighty foes and solve ancient mysteries as you ascend on a deadly pilgrimage to the kingdom’s peak. Hollow Knight: Silksong is the epic sequel to Hollow Knight, the award winning action-adventure. Journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover secrets tied to your nature and your past.",
             "image" => "images/fortnite.jpg",
-            "image2" => "images/fortnite.jpg"
+            "image2" => "images/fortnite2.jpg"
         ),
         "marvel rivals" => array(
             "title" => "Marvel Rivals",
@@ -20,7 +20,7 @@
             "rating" => "6",
             "description" => "Marvel Rivals is a Super Hero Team-Based PVP Shooter! Assemble an all-star Marvel squad, devise countless strategies by combining powers to form unique Team-Up skills and fight in destructible, ever-changing battlefields across the continually evolving Marvel universe!",
             "image" => "images/marvelrivals.png",
-            "image2" => "images/marvelrivals2.jpg"
+            "image2" => "images/marvelrivals2.png"
         )
     );
     $selectedGame = 1;
@@ -51,7 +51,7 @@
     <script src="lib/index.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
 </head>
-<body class="darkmode">
+<body>
     <img src="images/lightModeBackground.gif" id="gifImage" alt="achtergrond">
     <header>
         <section>
@@ -77,8 +77,8 @@
             <section class="lucasGame1">
                 <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="lucasGameImage">
                 <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>" class="lucasGameImage">
-                <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             </section>
+            <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
             <section class="lucasGame2">
                 <h1><?php echo $game['title']; ?></h1>
                 <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>

@@ -1,16 +1,17 @@
-<?php 
-    $reviewGames => array(
+<?php
+    $reviewGames = array(
         "FarCry3" => array(
             "title" => "FarCry3",
             "pegi" => 18,
             "developer" => "Ubisoft Montreal",
             "release" => "29 Nov, 2012",
             "genre" => "Action, FPS, Open World",
-            "rating" => "9/10",
+            "rating" => "9",
             "description" => "Far Cry 3 speelt zich af op een tropisch eiland waar je moet ontsnappen aan piraten onder leiding van Vaas. Verken een grote open wereld, jaag dieren, craft uitrusting en ervaar een intens verhaal vol actie.",
             "image" => "images/FarCry3"
-        );
-
+            "image2" => "images/FarCry3F2.png"
+            "image3" => "images/FarCry3F3.png"
+        ),
         "FarCry4" => array(
             "title" => "FarCry4",
             "pegi" => 18,
@@ -20,23 +21,23 @@
             "rating" => "9/10",
             "description" => "Far Cry 4 speelt zich af in het bergachtige Kyrat, waar je opstaat tegen de dictator Pagan Min. De game biedt een grote open wereld, dierenjacht, voertuigen en veel co-op mogelijkheden.",
             "image" => "images/FarCry4"
-        );
-    )
+            "image2" => "images/FarCry4F1"
+            "image3" => "images/FarCry4F2
+        )
+        
+        $selectedGame = 1;
 
-$selectedGame = 2
+    switch($selectedGame){
+        case 1:
+            $game = $gameRaiReview3["darksouls3"];
+            break;
+        case 2:
+            $game = $gameRaiReview3["liesOfP"];
+            break;
+        default:
+            $game = $gameRaiReview3["darksouls3"];
+    }
 
-switch ($selectedGame){
-    case 1:
-        $game = $reviewGames["FarCry3"];
-        console.log("FarCry3 wordt getoond.");
-        break;
-    case 2:
-        $game = $reviewGames["FarCry4"]; 
-        console.log("FarCry4 wordt getoond.");
-        break;
-    default:
-        console.log("Ongeldige game-keuze.");
-}
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -51,6 +52,7 @@ switch ($selectedGame){
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>
+    <script src="lib/raiReview3php.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
 </head>
 <body class="darkmode">
@@ -76,24 +78,42 @@ switch ($selectedGame){
     </header>
     <main>
         <section class="raiGameLayout">
+            <h1><?php echo $game['title']; ?></h1>
             <section class="raiGame1">
-                <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>" class="raiGameImage">
-                <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
-            </section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/J6gnOVJsCsM?si=vUh6VQPc1n916kV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6d60v1OErEY?si=iFrEGh2ZnlA1wfxj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <section class="raiGame2">
-                <h1><?php echo $game['title']; ?></h1>
-                <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
-                <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
-                <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
-                <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
-                <article class="raiGameStory">
-                    <h2>Beschrijving</h2>
-                    <p><?php echo $game['description']; ?></p>
-                </article>
-            </section>
+                <section class="slideshowreview-container">
+                    <section class="homeslidesreview">
+                        <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>">
+                    </section>
+                    <section class="homeslidesreview">
+                        <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>">
+                    </section>
+                    <section class="homeslidesreview">
+                        <img src="<?php echo $game['image3']; ?>" alt="<?php echo $game['title']; ?>">
+                    </section>
+                    <section class="homeslidesreview">
+                        <iframe class="raiGameReviewTrailer" src="<?php echo $game['trailer']; ?>" title="<?php echo $game['title']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </section>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <section class="dotreview-container">
+                    <span class="dotreview" onclick="currentSlide(1)"></span>
+                    <span class="dotreview" onclick="currentSlide(2)"></span>
+                    <span class="dotreview" onclick="currentSlide(3)"></span>
+                    <span class="dotreview" onclick="currentSlide(4)"></span>
+                    </section>
+                    <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
+                    <section class="raiGame2">
+                        <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
+                        <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
+                        <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
+                        <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
+                        <article class="raiGameStory">
+                            <h2>Beschrijving</h2>
+                            <p><?php echo $game['description']; ?></p>
+                        </article>
+                    </section>
+                </section>
+            </section>  
         </section>
     </main>
     <footer>

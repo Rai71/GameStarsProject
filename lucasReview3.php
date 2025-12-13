@@ -49,7 +49,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Lucas Zonneveld">
-    <title>Lucas review 2</title>
+    <title>Lucas review 3</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

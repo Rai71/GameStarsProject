@@ -19,7 +19,7 @@
             "developer" => "Semiwork Studios",
             "release" => "26 February 2025",
             "genre" => "Survival horror, Multiplayer",
-            "rating" => "16+",
+            "rating" => "6",
             "description" => "R.E.P.O. (short for Retrieve, Extract and Profit Operation) is an online cooperative survival horror game developed and published by Swedish studio Semiwork. Released in early access on February 26, 2025 for Windows, the game combines nail-biting tension with unpredictable physics-driven chaos.",
             "image" => "images/repo.jpg",
             "image2" => "images/repo2.avif",

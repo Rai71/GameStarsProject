@@ -1,38 +1,87 @@
 <?php 
     $reviewGames = array(
-        "Whosyourdaddy"  => array(
-            "title" => "Who's Your Daddy?!",
+        "ArcRaiders" => array(
+            "title" => "Arc Raiders",
             "pegi" => 16,
-            "developer" => "Evil Tortilla Games",
-            "release" => "23 Dec, 2015",
-            "genre" => "Funny, Multiplayer, First-Person, Comedy, Simulation",
-            "rating" => "6.5",
-            "description" => "Who's Your Daddy is a casual multiplayer game featuring a clueless father attempting to prevent his infant son from certain death. Play with up to 7 of your friends, and test your parenting skills in a competitive setup with wacky physics and over 67 potentially ominous household items.",
-            "platform" => "PlayStation 5, PlayStation 4, Android, Xbox One, Linux",
-            "image" => "images/whosYourDaddy.jpg",
-            "image2" => "images/whosYourDaddy2.jpg",
-            "image3" => "images/whosYourDaddy3.jpg",
-            "trailer" => "https://www.youtube.com/embed/ixKIRD63rUk?si=n7OAGrOjb9MF-m1C",
+            "developer" => "Embark Studios",
+            "release" => "2024",
+            "genre" => "FPS, Co-op, Shooter",
+            "rating" => "7.8",
+            "description" => "Arc Raiders is a fast-paced co-op shooter where teams battle robotic invaders across dynamic terrains.",
+            "platform" => "PC, PlayStation 5, Xbox Series X/S",
+            "image" => "images/arcraiders.jpg",
+            "trailer" => "https://www.youtube.com/embed/_GZpjgRy35o?si=MyUAQEMfF2bFLGX4",
+            "visitorReviews" => array(
+                array("name" => "Sam", "text" => "Heerlijke co-op ervaring met veel actie.", "rating" => 4),
+                array("name" => "Marta", "text" => "Visueel mooi, maar nog iets te weinig content.", "rating" => 3),
+                array("name" => "Joey", "text" => "Echt leuk met vrienden, veel replaywaarde.", "rating" => 4)
+            )
+        ),
+        "RedDead2" => array(
+            "title" => "Red Dead Redemption 2",
+            "pegi" => 18,
+            "developer" => "Rockstar Games",
+            "release" => "2018",
+            "genre" => "Action-Adventure, Open World",
+            "rating" => "9.6",
+            "description" => "Een episch verhaal in het Wilde Westen met diepe personages en uitstekende wereldbouw.",
+            "platform" => "PlayStation 4, Xbox One, PC",
+            "image" => "images/Red Dead Redemption 2.jpg",
+            "trailer" => "https://www.youtube.com/embed/gmA6MrX81z4?si=ob04dP5NfedkrYNG",
+            "visitorReviews" => array(
+                array("name" => "Lotte", "text" => "Fantastische ervaring, zeer meeslepend.", "rating" => 5),
+                array("name" => "Henk", "text" => "Soms traag, maar het verhaal maakt alles goed.", "rating" => 4),
+                array("name" => "Iris", "text" => "Eén van de beste spellen ooit gemaakt.", "rating" => 5)
+            )
         ),
         "Phasmophobia" => array(
             "title" => "Phasmophobia",
-            "pegi" => "pegi: 16",
+            "pegi" => 16,
             "developer" => "Kinetic Games",
-            "release" => "18 Sep, 2020",
-            "genre" => "Horror, Online Co-Op, Multiplayer, Psychological Horror",
+            "release" => "2020",
+            "genre" => "Horror, Multiplayer, Co-op",
             "rating" => "9.2",
-            "description" => "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+            "description" => "Een coöperatieve paranormale jacht waarbij teamwork en onderzoek centraal staan.",
+            "platform" => "PC, VR",
             "image" => "images/phasmophobia.jpg",
-            "image2" => "images/phasmophobia2.jpg",
-            "image3" => "images/phasmophobia3.jpg",
-            "image4" => "images/phasmophobia4.jpg",
-            "image5" => "images/phasmophobia5.jpg",
-            "trailer" => "https://www.youtube.com/embed/adFNARIHlOs?si=TgmVRKlmY85ydULq",
-            "platform" => "PlayStation 5, Xbox Series X and Series S, Nintendo Switch 2, Microsoft Windows, GeForce Now"
+            "trailer" => "https://www.youtube.com/embed/adFNARIHlOs",
+            "visitorReviews" => array(
+                array("name" => "Rai", "text" => "Intense atmosfeer, goed voor jump-scares.", "rating" => 5),
+                array("name" => "Lucas", "text" => "Leuk met vrienden, soms buggy maar charmant.", "rating" => 4),
+                array("name" => "Eren", "text" => "De spanning is geweldig; aanrader voor horrorfans.", "rating" => 5)
+            )
+        ),
+        "HollowKnight" => array(
+            "title" => "Hollow Knight",
+            "pegi" => 12,
+            "developer" => "Team Cherry",
+            "release" => "2017",
+            "genre" => "Metroidvania, Platformer, Indie",
+            "rating" => "8.9",
+            "description" => "Een sfeervolle 2D metroidvania met strakke platform- en vechtmechanieken.",
+            "platform" => "PC, Nintendo Switch, PlayStation 4, Xbox One",
+            "image" => "images/hollowknight.jpg",
+            "trailer" => "https://www.youtube.com/embed/yQxwbZsL14Y?si=5wMxwrQlUpdOG2-5",
+            "visitorReviews" => array(
+                array("name" => "Bas", "text" => "Sfeervolle wereld en goede uitdaging.", "rating" => 5),
+                array("name" => "Noa", "text" => "Mooi ontworpen met veel geheimen.", "rating" => 4),
+                array("name" => "Kim", "text" => "Geweldige artstyle en muziek.", "rating" => 5)
+            )
         )
     );
 
-
+    $selectedGame = 1;
+    switch ($selectedGame){
+        case 1:  
+            $game = $reviewGames["Whosyourdaddy"];
+            break;
+        case 2:
+            $game = $reviewGames["Phasmophobia"];
+            break;
+        default:
+            $game = $reviewGames["Whosyourdaddy"];
+            break;
+    }
 
 
 
@@ -48,10 +97,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Lucas Zonneveld">
-    <title>GameStars</title>
+    <title>Latest Reviews</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>
+    <script src="lib/latestReview.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -73,7 +123,7 @@
             <section class="subnav2">
                 <button class="subnavBTN2">Reviews</button>
                 <section class="subnavContent2">
-                    <a class="dropDownStyle" href="latestReviews.html">Latest Reviews</a>
+                    <a class="dropDownStyle" href="latestReviews.php">Latest Reviews</a>
                     <a class="dropDownStyle" href="raiPageReview.html">Rai Reviews</a>
                     <a class="dropDownStyle" href="lucasPageReview.html">Lucas Reviews</a>
                     <a class="dropDownStyle" href="erenPageReview.html">Eren Reviews</a>
@@ -86,60 +136,82 @@
     </header>
     <main>
         <?php
+            $slides = array();
+            $under16 = null;
+            foreach($reviewGames as $key => $rg){
+                $pegi = intval(preg_replace('/[^0-9]/','',$rg['pegi']));
+                if($pegi >= 16){
+                    $slides[] = $rg;
+                } else {
+                    if(!$under16) $under16 = $rg;
+                }
+            }
+            $slides = array_slice($slides, 0, 3);
+            if(!$under16){
+                foreach($reviewGames as $rg){
+                    if(intval(preg_replace('/[^0-9]/','',$rg['pegi'])) < 16){
+                        $under16 = $rg;
+                        break;
+                    }
+                }
+            }
+            $slideshow = $slides;
+            if($under16) $slideshow[] = $under16;
+            $total = count($slideshow);
+            ?>
+        <section class='latestReviewsContainer'>
+            <h1>Latest Reviews</h1>
+            <?php foreach($slideshow as $i => $game): ?>
+                <section class='homeslide fade'>
+                    <article class='nummerText'><?php echo ($i + 1) . " / " . $total; ?></article>
+                    <img src='<?php echo htmlspecialchars($game['image']); ?>' alt='<?php echo htmlspecialchars($game['title']); ?>'>
+                    <section class='gameContainer'>  
+                        <h2><?php echo htmlspecialchars($game['title']); ?></h2>
+                        <p class='game-rating'><strong>Rating:</strong> ⭐ <?php echo htmlspecialchars($game['rating']); ?>/10</p>
+                        <section class='raiGame2'>
+                            <p><strong>PEGI:</strong> <?php echo htmlspecialchars($game['pegi']); ?></p>
+                            <p><strong>Ontwikkelaar:</strong> <?php echo htmlspecialchars($game['developer']); ?></p>
+                            <p><strong>Releasejaar:</strong> <?php echo htmlspecialchars($game['release']); ?></p>
+                            <p><strong>Genre:</strong> <?php echo htmlspecialchars($game['genre']); ?></p>
+                            <p><strong>Platform:</strong> <?php echo htmlspecialchars($game['platform']); ?></p>
+                            <article class='raiGameStory'>
+                                <h2>Beschrijving</h2>
+                                <p><?php echo htmlspecialchars($game['description']); ?></p>
+                            </article>
 
-            echo'
+                            <article class='reviewsBlock'>
+                                <h3>Bezoekersreviews</h3>
+                                <?php if(isset($game['visitorReviews']) && is_array($game['visitorReviews'])): ?>
+                                    <?php foreach($game['visitorReviews'] as $vr): ?>
+                                        <div class='visitor-review'>
+                                            <strong><?php echo htmlspecialchars($vr['name']); ?></strong>
+                                            <p><?php echo htmlspecialchars($vr['text']); ?></p>
+                                            <p>Rating: <?php echo intval($vr['rating']); ?>/5</p>
+                                        </div>
+                                    <?php endforeach; ?>
+                                <?php else: ?>
+                                    <p>Geen bezoekersreviews beschikbaar.</p>
+                                <?php endif; ?>
+                            </article>
+                            <article class='trailer'>
+                                <h3>Trailer</h3>
+                                <?php if(!empty($game['trailer'])): ?>
+                                    <iframe width='560' height='315' src='<?php echo htmlspecialchars($game['trailer']); ?>' title='YouTube trailer' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
+                                <?php endif; ?>
+                            </article>
 
-
-
-        <section class="latestReviewsContainer">
-            <h1>Latest Review</h1>
-            <section class="homeslide fade">
-                <article class="nummerText">1 / 4</article>
-                <img src="images/arcraiders.jpg" alt="Arc raiders">
-            </section>
-            <section class="homeslide fade">
-                <article class="nummerText">2 / 4</article>
-                <img src="images/Red Dead Redemption 2.jpg" alt="Red Dead Redemption 2">
-                <section id="gameContainer"></section>  
-                                <p class="game-rating"><strong>Rating:</strong> ⭐ {$game["rating"]}/10</p>
-                                <section class="raiGame2">
-                                    <p><strong>PEGI:</strong> {$game["pegi"]}</p>
-                                    <p><strong>Ontwikkelaar:</strong> {$game["developer"]}</p>
-                                    <p><strong>Releasejaar:</strong> {$game["release"]}</p>
-                                    <p><strong>Genre:</strong> {$game["genre"]}</p>
-                                    <article class="raiGameStory">
-                                        <h2>Beschrijving</h2>
-                                        <p>{$game["description"]}</p>
-                                    </article>
-                                </section>
-                            </section>
                         </section>
                     </section>
-            </section>
-            <section class="homeslide fade">
-                <article class="nummerText">3 / 4</article>
-                <img src="images/spooderman.webp" alt="Marvels Spiderman 2">
-            </section>
-            <section class="homeslide fade">
-                <article class="nummerText">4 / 4</article>
-                <img src="images/hollowknight.jpg" alt="Hollow knight">
-            </section>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <section>
-                
-            </section>
-            <section class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
+                </section>
+            <?php endforeach; ?>
+            <a class='prev' onclick='lr_plusSlides(-1)'>&#10094;</a>
+            <a class='next' onclick='lr_plusSlides(1)'>&#10095;</a>
+            <section class='dot-container'>
+                <?php for($d = 1; $d <= $total; $d++): ?>
+                    <span class='dot' onclick='lr_currentSlide(<?php echo $d; ?>)'></span>
+                <?php endfor; ?>
             </section>
         </section>
-        '
-        ?>
     </main>
     <footer>
         <section class="waves">

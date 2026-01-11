@@ -356,7 +356,8 @@ footer .wave#wave4{
 }
 
 /* Hide the images by default */
-.homeslides {
+.homeslides,
+.homeslide {
   display: none;
 }
 

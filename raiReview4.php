@@ -14,47 +14,38 @@ if (isset($_POST['submit'])) {
     $_SESSION['reviews'][] = $newReview;
 }
     $reviewGames = array(
-        "Whosyourdaddy"  => array(
-            "title" => "Who's Your Daddy?!",
-            "pegi" => 16,
-            "developer" => "Evil Tortilla Games",
-            "release" => "23 Dec, 2015",
-            "genre" => "Funny, Multiplayer, First-Person, Comedy, Simulation",
-            "rating" => "6.5",
-            "description" => "Who's Your Daddy is a casual multiplayer game featuring a clueless father attempting to prevent his infant son from certain death. Play with up to 7 of your friends, and test your parenting skills in a competitive setup with wacky physics and over 67 potentially ominous household items.",
-            "platform" => "PlayStation 5, PlayStation 4, Android, Xbox One, Linux",
-            "image" => "images/whosYourDaddy.jpg",
-            "image2" => "images/whosYourDaddy2.jpg",
-            "image3" => "images/whosYourDaddy3.jpg",
-            "trailer" => "https://www.youtube.com/embed/ixKIRD63rUk?si=n7OAGrOjb9MF-m1C",
+        "DragonBallXenoVerse"  => array(
+            "title" => "Dragon BallXenoVerse",
+            "pegi" => 12,
+            "developer" => "Bandai Namco Entertainment, Dimps",
+            "release" => "4 oktober 2014",
+            "genre" => "Vechtspel, Computerrollenspel, Actiespel, Avonturenspel",
+            "rating" => "9.5",
+            "description" => "Dragon Ball Xenoverse is een action-RPG-vechtspel waarin spelers een eigen avatar creëren om samen met klassieke personages te vechten. Ze grijpen in tijdens beroemde gevechten om een corrupte tijdlijn te herstellen. Het spel bevat personagecreatie, een centrale hubstad (Toki Toki City) en unieke verhaalmissies die draaien om tijdreizen en de mysterieuze Time Breakers. Het combineert 3D-gevechten met RPG-elementen, waardoor spelers rassen kunnen kiezen zoals Saiyans, Majins en Namekians, vaardigheden kunnen leren van meesters zoals Goku en nieuwe locaties kunnen verkennen. Zo biedt het een origineel verhaal binnen het Dragon Ball-universum.",
+            "platform" => "PC, PlayStation 3, PlayStation 4, Xbox 360, Xbox One,",
+
         ),
-        "Phasmophobia" => array(
-            "title" => "Phasmophobia",
-            "pegi" => "pegi: 16",
-            "developer" => "Kinetic Games",
-            "release" => "18 Sep, 2020",
-            "genre" => "Horror, Online Co-Op, Multiplayer, Psychological Horror",
-            "rating" => "9.2",
-            "description" => "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
-            "image" => "images/phasmophobia.jpg",
-            "image2" => "images/phasmophobia2.jpg",
-            "image3" => "images/phasmophobia3.jpg",
-            "image4" => "images/phasmophobia4.jpg",
-            "image5" => "images/phasmophobia5.jpg",
-            "trailer" => "https://www.youtube.com/embed/adFNARIHlOs?si=TgmVRKlmY85ydULq",
-            "platform" => "PlayStation 5, Xbox Series X and Series S, Nintendo Switch 2, Microsoft Windows, GeForce Now"
+        "DragonBallXenoVerse2" => array(
+            "title" => "Dragon Ball XenoVerse 2",
+            "pegi" => 12,
+            "developer" => "Dimps, QLOC",
+            "release" => "8 oktober 2016",
+            "genre" => "Vechtspel, Actiespel, Computerrollenspel, Avonturenspel, Casual game, Massively Multiplayer, Adventure",
+            "rating" => "9.5",
+            "description" => "Dragon Ball Xenoverse 2 is een action-RPG waarin je een aangepaste Time Patroller creëert om de Dragon Ball-tijdlijn te beschermen tegen schurken die de geschiedenis willen veranderen. Je verkent de uitgestrekte hubstad Conton City, traint met iconische personages en vecht door verschillende tijdperken heen in 3D-arena’s. Het spel biedt diepgaande aanpassingsmogelijkheden, uitgebreide PvE- en PvP-content en jaren aan DLC. Het bouwt voort op het origineel door de wereld uit te breiden en content uit Dragon Ball Super toe te voegen, wat zorgt voor een MMO-achtige ervaring met epische gevechten en karaktergroei.",
+            "platform" => "PlayStation 4, Playstation 5, Nintendo Switch, Xbox One, Xbox series X, PC"
         )
     );
     $selectedGame = 1;
     switch ($selectedGame){
         case 1:  
-            $game = $reviewGames["Whosyourdaddy"];
+            $game = $reviewGames["DragonBallXenoVerse"];
             break;
         case 2:
-            $game = $reviewGames["Phasmophobia"];
+            $game = $reviewGames["DragonBallXenoVerse2"];
             break;
         default:
-            $game = $reviewGames["Whosyourdaddy"];
+            $game = $reviewGames["DragonBallXenoVerse"];
             break;
     }
 
@@ -76,13 +67,13 @@ if (!empty($_SESSION['reviews'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Lucas Zonneveld">
-    <title>Lucas Review 4</title>
+    <meta name="author" content="Rainier Gondres">
+    <title>Rai Review 4</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
-    <script src="lib/lucasReview4php.js" defer></script>
+    <script src="lib/raiReview4.js" defer></script>
 </head>
 <body>
     <img src="images/lightModeBackground.gif" id="gifImage" alt="achtergrond">
@@ -118,6 +109,7 @@ if (!empty($_SESSION['reviews'])) {
         <?php
             echo "        
             <section class='raiGameLayout'>
+            <h1>{$game['title']}</h1>
                 <section id='gameContainer'></section>  
                                 <p class='game-rating'><strong>Rating:</strong> ⭐ {$averageRating}/10</p>
                                 <section class='raiGame2'>

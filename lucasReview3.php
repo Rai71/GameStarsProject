@@ -72,6 +72,15 @@
                     <a class="dropDownStyle" href="xbox10.html">Xbox</a>
                 </section>
             </section>
+            <section class="subnav2">
+                <button class="subnavBTN2">Reviews</button>
+                <section class="subnavContent2">
+                    <a class="dropDownStyle" href="latestReviews.html">Latest Reviews</a>
+                    <a class="dropDownStyle" href="raiPageReview.html">Rai Reviews</a>
+                    <a class="dropDownStyle" href="lucasPageReview.html">Lucas Reviews</a>
+                    <a class="dropDownStyle" href="erenPageReview.html">Eren Reviews</a>
+                </section>
+            </section>
             <a href="merch.html">Merchandise</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -79,17 +88,17 @@
     </header>
     <main>
         <section class="raiGameLayout">
-            <h1><?php echo $game['title']; ?></h1>
+            <h1><?php echo $game["title"]; ?></h1>
             <section class="raiGame1">
                 <section class="slideshowreview-container">
                     <section class="homeslidesreview">
-                        <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>">
+                        <img src="<?php echo $game["image"]; ?>" alt="<?php echo $game['title']; ?>">
                     </section>
                     <section class="homeslidesreview">
-                        <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>">
+                        <img src="<?php echo $game["image2"]; ?>" alt="<?php echo $game['title']; ?>">
                     </section>
                     <section class="homeslidesreview">
-                        <img src="<?php echo $game['image3']; ?>" alt="<?php echo $game['title']; ?>">
+                        <img src="<?php echo $game["image3"]; ?>" alt="<?php echo $game['title']; ?>">
                     </section>
                     <section class="homeslidesreview">
                         <iframe class="raiGameReviewTrailer" src="<?php echo $game['trailer']; ?>" title="<?php echo $game['title']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

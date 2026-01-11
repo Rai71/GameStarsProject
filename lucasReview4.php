@@ -161,7 +161,6 @@ if (!empty($_SESSION['reviews'])) {
                 echo '</section>';
             }
         ?>
- ?>
     </main>
     <footer>
         <section class="waves">

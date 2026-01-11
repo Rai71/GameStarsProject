@@ -103,7 +103,7 @@ if (!empty($_SESSION['reviews'])) {
             <section class="subnav2">
                 <button class="subnavBTN2">Reviews</button>
                 <section class="subnavContent2">
-                    <a class="dropDownStyle" href="latestReviews.html">Latest Reviews</a>
+                    <a class="dropDownStyle" href="latestReviews.php">Latest Reviews</a>
                     <a class="dropDownStyle" href="raiPageReview.html">Rai Reviews</a>
                     <a class="dropDownStyle" href="lucasPageReview.html">Lucas Reviews</a>
                     <a class="dropDownStyle" href="erenPageReview.html">Eren Reviews</a>

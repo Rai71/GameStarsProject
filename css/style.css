@@ -1490,3 +1490,29 @@ label.star:before{
     width: 13.76vw;
     border-radius: 0 0 12px 0;
 }
+
+
+.latestReviewsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30vh;
+    padding: 2vw;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+
+.latestReviewsContainer img {
+    height: 50vh;
+    width: 50vw;
+    object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}

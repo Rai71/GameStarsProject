@@ -94,10 +94,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Bekijk onze nieuwste game reviews van Hollow Knight: Silksong, Red Dead Redemption 2, Phasmophobia en ARC Raiders.">
+    <meta name="keywords" content="hollow knight silksong, hollow knight silksong review, red dead redemption 2, rdr2 review, phasmophobia, phasmophobia review, arc raiders, arc raiders review">
     <meta name="author" content="Lucas Zonneveld">
-    <title>Latest Reviews</title>
+    <title>Latest Reviews - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

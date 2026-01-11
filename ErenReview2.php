@@ -46,10 +46,10 @@ switch ($selectedGame){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Eren">
-    <title>Rai review 2</title>
+    <meta name="description" content="Alles over Minecraft en EA FC 26: eerlijke reviews, gameplay-inzichten en tips voor beginners en fans.">
+    <meta name="keywords" content="minecraft recensie, ea fc 26 recensie, voetbalspel review, sandbox game review, beste games, online games, pc en console games">
+    <meta name="author" content="Eren Yilmaz">
+    <title>Eren's Game Review 2 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

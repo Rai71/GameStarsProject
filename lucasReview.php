@@ -35,10 +35,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Ontdek onze uitgebreide reviews van Hollow Knight: Silksong en Cyberpunk 2077 — eerlijke scores, gameplay-analyse en onmisbare tips. Lees nu!">
+    <meta name="keywords" content="game reviews, game recensies, gameplay analyse, Hollow Knight Silksong, Cyberpunk 2077, walkthroughs, game tips">
     <meta name="author" content="Lucas Zonneveld">
-    <title>Lucas review 2</title>
+    <title>Lucas review 2 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

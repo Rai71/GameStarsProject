@@ -52,10 +52,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Ontdek of Lies of P en Dark Souls III de ultieme uitdaging bieden — guides, tips en ons verdict. Lees nu en bereid je voor op epische gevechten!">
+    <meta name="keywords" content="Lies of P builds, Lies of P bossstrategieën, Lies of P walkthrough, Dark Souls III weapon arts, Dark Souls III boss guides, Dark Souls III lore">
     <meta name="author" content="Rainier Gondres">
-    <title>Rai review 2</title>
+    <title>Rai's Game review 3 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

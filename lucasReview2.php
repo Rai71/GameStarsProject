@@ -42,10 +42,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Marvel Rivals review: hero brawls, teamcomps en de beste builds in één overzicht.">
+    <meta name="keywords" content="Marvel Rivals helden builds, Marvel Rivals teamcomps, Marvel Rivals competitive tips">
     <meta name="author" content="Lucas Zonneveld">
-    <title>Lucas review 2</title>
+    <title>Lucas review 2 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

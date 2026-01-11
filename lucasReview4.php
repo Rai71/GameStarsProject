@@ -74,10 +74,10 @@ if (!empty($_SESSION['reviews'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Ontdek in onze reviews of Who’s Your Daddy?! en Phasmophobia de moeite waard zijn — gameplay‑analyses, tips en verdicts voor party‑ en horrorfans. Lees nu!">
+    <meta name="keywords" content="Who’s Your Daddy strategieën, Who’s Your Daddy multiplayer tips, Phasmophobia onderzoeks‑tips, Phasmophobia spooktypes, coöp horror strategieën, partygame grappige momenten">
     <meta name="author" content="Lucas Zonneveld">
-    <title>Lucas Review 4</title>
+    <title>Lucas Review 4 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

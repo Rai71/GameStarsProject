@@ -65,10 +65,10 @@ if (!empty($_SESSION['reviews'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Lees onze uitgebreide reviews van Dragon Ball Xenoverse en Xenoverse 2: gameplay, character builds, combo‑tips en multiplayer‑modes.">
+    <meta name="keywords" content="Xenoverse combo tips, Xenoverse character builds, Xenoverse 2 PvP strategieën, Xenoverse multiplayer guides, Xenoverse mods, Xenoverse DLC tips">
     <meta name="author" content="Rainier Gondres">
-    <title>Rai Review 4</title>
+    <title>Rai's Game Review 4 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

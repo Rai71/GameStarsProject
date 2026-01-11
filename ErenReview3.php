@@ -47,10 +47,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Alles over Far Cry 3 en Far Cry 4: eerlijke reviews, open wereld gameplay en actievolle missies.">
+    <meta name="keywords" content="far cry 3 recensie, far cry 4 recensie, open wereld game review, shooter review, actie games, beste shooters">
     <meta name="author" content="Eren Yilmaz">
-    <title>Eren review 3</title>
+    <title>Eren's Game Review 3 - GameStars Project</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>

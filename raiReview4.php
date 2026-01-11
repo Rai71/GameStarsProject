@@ -1,49 +1,71 @@
-<?php 
-    $gameRaiReview3 = array(
 
-        "dragonBallFighterZ" => array(
-            "title" => "Dragon Ball FighterZ",
-            "pegi" => 12,
-            "developer" => "Arc System Works",
-            "release" => "13 januari 2018",
-            "genre" => "Vechtspel, Actiespel, Avonturenspel",
-            "rating" => 9.4,
-            "description" => "Dragon Ball FighterZ is een visueel verbluffende 3-tegen-3 tag-team vechtgame van Arc System Works, bekend om zijn animegetrouwe graphics en toegankelijke maar diepgaande gameplay. Je kunt droomteams samenstellen uit personages uit het Dragon Ball-universum, met razendsnelle combo’s en iconische superaanvallen, allemaal verpakt in een uniek verhaal met Android 21.",
-            "image" => "images/dragonballfighterz1.jpeg",
-            "image2" => "images/dragonballfighterz2.jpeg",
-            "image3" => "images/dragonballfighterz3.jpeg",
-            "trailer" => "https://www.youtube.com/embed/oBI0MU73nlc?si=0RKWs5x-e1l3RiBP",
-        ),
+<?php
+session_start();
+if (!isset($_SESSION['reviews'])) {
+    $_SESSION['reviews'] = array();
+}
 
-        "dragonBallSparkingZero" => array(
-            "title" => "Dragon Ball: Sparking! Zero",
-            "pegi" => 12,
-            "developer" => "Spike Chunsoft",
-            "release" => "7 oktober 2024",
-            "genre" => "Vechtspel, Actiespel, Avonturenspel",
-            "rating" => 9.4,
-            "description" => "Dragon Ball: Sparking! ZERO is een razendsnelle 3D team-vechtgame die de Budokai Tenkaichi-erfenis voortzet, met verbluffende Unreal Engine 5-graphics, verwoestbare omgevingen en de grootste personageroster in de geschiedenis van de franchise (180+ personages uit DBZ, Super, GT en de films). De game blaast de klassieke gameplay nieuw leven in met moderne mechanics zoals Skill Count, Vanishing Assaults en een uitgebreide Custom Mode voor het creëren en delen van scenario’s, en biedt authentieke animegevechten met epische transformaties en ultieme aanvallen.",
-            "image" => "images/liesofp1.jpg",
-            "image2" => "images/liesofp2.webp",
-            "image3" => "images/liesofp3.jpg",
-            "trailer" => "https://www.youtube.com/embed/kXZoKdr-xeo?si=CSe3NSHQWcueSr9N",
-        ),
+if (isset($_POST['submit'])) {
+    $newReview = array(
+        'naam' => htmlspecialchars($_POST['naam']),
+        'beschrijving' => htmlspecialchars($_POST['beschrijving']),
+        'rating' => htmlspecialchars($_POST['rating'])
     );
-
-
-
+    $_SESSION['reviews'][] = $newReview;
+}
+    $reviewGames = array(
+        "Whosyourdaddy"  => array(
+            "title" => "Who's Your Daddy?!",
+            "pegi" => 16,
+            "developer" => "Evil Tortilla Games",
+            "release" => "23 Dec, 2015",
+            "genre" => "Funny, Multiplayer, First-Person, Comedy, Simulation",
+            "rating" => "6.5",
+            "description" => "Who's Your Daddy is a casual multiplayer game featuring a clueless father attempting to prevent his infant son from certain death. Play with up to 7 of your friends, and test your parenting skills in a competitive setup with wacky physics and over 67 potentially ominous household items.",
+            "platform" => "PlayStation 5, PlayStation 4, Android, Xbox One, Linux",
+            "image" => "images/whosYourDaddy.jpg",
+            "image2" => "images/whosYourDaddy2.jpg",
+            "image3" => "images/whosYourDaddy3.jpg",
+            "trailer" => "https://www.youtube.com/embed/ixKIRD63rUk?si=n7OAGrOjb9MF-m1C",
+        ),
+        "Phasmophobia" => array(
+            "title" => "Phasmophobia",
+            "pegi" => "pegi: 16",
+            "developer" => "Kinetic Games",
+            "release" => "18 Sep, 2020",
+            "genre" => "Horror, Online Co-Op, Multiplayer, Psychological Horror",
+            "rating" => "9.2",
+            "description" => "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+            "image" => "images/phasmophobia.jpg",
+            "image2" => "images/phasmophobia2.jpg",
+            "image3" => "images/phasmophobia3.jpg",
+            "image4" => "images/phasmophobia4.jpg",
+            "image5" => "images/phasmophobia5.jpg",
+            "trailer" => "https://www.youtube.com/embed/adFNARIHlOs?si=TgmVRKlmY85ydULq",
+            "platform" => "PlayStation 5, Xbox Series X and Series S, Nintendo Switch 2, Microsoft Windows, GeForce Now"
+        )
+    );
     $selectedGame = 1;
-
-    switch($selectedGame){
-        case 1:
-            $game = $gameRaiReview3["darksouls3"];
+    switch ($selectedGame){
+        case 1:  
+            $game = $reviewGames["Whosyourdaddy"];
             break;
         case 2:
-            $game = $gameRaiReview3["liesOfP"];
+            $game = $reviewGames["Phasmophobia"];
             break;
         default:
-            $game = $gameRaiReview3["darksouls3"];
+            $game = $reviewGames["Whosyourdaddy"];
+            break;
     }
+
+
+if (!empty($_SESSION['reviews'])) {
+    $sum = $game['rating'];
+    foreach ($_SESSION['reviews'] as $r) {
+        $sum += $r['rating'] * 2;
+    }
+    $averageRating = round($sum / (count($_SESSION['reviews']) + 1), 1);
+}
 
 ?>
 <!DOCTYPE html>
@@ -54,15 +76,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Rainier Gondres">
-    <title>Rai review 2</title>
+    <meta name="author" content="Lucas Zonneveld">
+    <title>Lucas Review 4</title>
     <link rel="icon" href="images/Game_Stars_logo_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="lib/index.js" defer></script>
-    <script src="lib/raiReview4php.js" defer></script>
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
+    <script src="lib/lucasReview4php.js" defer></script>
 </head>
-<body class="darkmode">
+<body>
     <img src="images/lightModeBackground.gif" id="gifImage" alt="achtergrond">
     <header>
         <section>
@@ -93,44 +115,61 @@
         <button id="darkModeBTN" onclick="changeGIF()">🌖</button>
     </header>
     <main>
-        <section class="raiGameLayout">
-            <h1><?php echo $game['title']; ?></h1>
-            <section class="raiGame1">
-                <section class="slideshowreview-container">
-                    <section class="homeslidesreview">
-                        <img src="<?php echo $game['image']; ?>" alt="<?php echo $game['title']; ?>">
+        <?php
+            echo "        
+            <section class='raiGameLayout'>
+                <section id='gameContainer'></section>  
+                                <p class='game-rating'><strong>Rating:</strong> ⭐ {$averageRating}/10</p>
+                                <section class='raiGame2'>
+                                    <p><strong>PEGI:</strong> {$game['pegi']}</p>
+                                    <p><strong>Ontwikkelaar:</strong> {$game['developer']}</p>
+                                    <p><strong>Releasejaar:</strong> {$game['release']}</p>
+                                    <p><strong>Genre:</strong> {$game['genre']}</p>
+                                    <article class='raiGameStory'>
+                                        <h2>Beschrijving</h2>
+                                        <p>{$game['description']}</p>
+                                    </article>
+                                </section>
+                            </section>
+                        </section>
                     </section>
-                    <section class="homeslidesreview">
-                        <img src="<?php echo $game['image2']; ?>" alt="<?php echo $game['title']; ?>">
-                    </section>
-                    <section class="homeslidesreview">
-                        <img src="<?php echo $game['image3']; ?>" alt="<?php echo $game['title']; ?>">
-                    </section>
-                    <section class="homeslidesreview">
-                        <iframe class="raiGameReviewTrailer" src="<?php echo $game['trailer']; ?>" title="<?php echo $game['title']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </section>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <section class="dotreview-container">
-                    <span class="dotreview" onclick="currentSlide(1)"></span>
-                    <span class="dotreview" onclick="currentSlide(2)"></span>
-                    <span class="dotreview" onclick="currentSlide(3)"></span>
-                    <span class="dotreview" onclick="currentSlide(4)"></span>
-                    </section>
-                    <p class="game-rating"><strong>Rating:</strong> ⭐ <?php echo $game['rating']; ?>/10</p>
-                    <section class="raiGame2">
-                        <p><strong>PEGI:</strong> <?php echo $game['pegi']; ?></p>
-                        <p><strong>Ontwikkelaar:</strong> <?php echo $game['developer']; ?></p>
-                        <p><strong>Releasejaar:</strong> <?php echo $game['release']; ?></p>
-                        <p><strong>Genre:</strong> <?php echo $game['genre']; ?></p>
-                        <article class="raiGameStory">
-                            <h2>Beschrijving</h2>
-                            <p><?php echo $game['description']; ?></p>
-                        </article>
-                    </section>
+                    <section class='reviewForm'>
+                        <form method='POST' action=''>
+                            <h1>Review</h1>
+                            <section class='reviewInputBox'>
+                                <input type='text' placeholder='Naam' name='naam' required>
+                            </section>
+                            <section class='reviewInputBox'>
+                                <textarea rows='5' name='beschrijving' placeholder='Beschrijving' required></textarea>
+                            </section>
+                            <section class='reviewInputBox'>
+                                <label>Rating:</label><br>
+                                <input type='radio' name='rating' value='1' required> 1
+                                <input type='radio' name='rating' value='2' required> 2
+                                <input type='radio' name='rating' value='3' required> 3
+                                <input type='radio' name='rating' value='4' required> 4
+                                <input type='radio' name='rating' value='5' required> 5
+                            </section>
+                            <input type='submit' name='submit'>
+                        </form>    
                 </section>
-            </section>  
         </section>
+            ";
+        ?>
+        <?php
+            if (!empty($_SESSION['reviews'])) {
+                echo '<section class="raiGameLayout">';
+                foreach ($_SESSION['reviews'] as $review) {
+                    echo '
+                    <section class="submitted-review">
+                        <h3>' . $review['naam'] . '</h3>
+                        <p>' . $review['beschrijving'] . '</p>
+                        <p>Rating: ' . $review['rating'] . '/5</p>
+                    </section>';
+                }
+                echo '</section>';
+            }
+        ?>
     </main>
     <footer>
         <section class="waves">
@@ -155,7 +194,7 @@
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
-        <p>&copy; 2025 GameStars | Gemaakt door R. Gondres, E. Yilmaz en L. Zonneveld</p>
+        <p id="trademark">&copy; 2025 GameStars | Gemaakt door R. Gondres, E. Yilmaz en L. Zonneveld</p>
     </footer>
 </body>
 </html>
